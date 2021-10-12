@@ -27,5 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: curl 'https://fmeag.eu.qlikcloud.com/api/v1/automations/e8864100-2058-11ec-b105-6907ac5a293e/actions/execute?X-Execution-Token=mmh2iOGvE3htdJWWvX9GRdn2Abde3riahBokK27Uiq9Sp7Go69XvRcClCTifTpTI'
+        run: curl 
 
