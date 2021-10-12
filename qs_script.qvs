@@ -46,4 +46,5 @@ LOAD * INLINE
 
 ///$tab Section 3
 
-//Das ist ein neuer Kommentar 3
+//Das ist ein neuer Kommentar 
+SET vTest = 1;
