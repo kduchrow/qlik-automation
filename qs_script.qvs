@@ -48,3 +48,6 @@ LOAD * INLINE
 
 //Das ist ein neuer Kommentar 
 SET vTest = 'Das ist einer neuer Wert';
+
+
+// Das ist ein Kommentar
