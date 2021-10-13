@@ -27,4 +27,4 @@ jobs:
       - name: Trigger Qlik Application Automation
         env: 
           TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
-        run: curl "$TRIGGER_URL"
+        run: $TRIGGER_URL
