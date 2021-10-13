@@ -46,5 +46,4 @@ LOAD * INLINE
 
 ///$tab Section 3
 
-//Das ist ein neuer Kommentar 
-SET vTest = 'Das ist ein ganz neuer Wert';
+// neuer Versuch
