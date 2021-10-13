@@ -24,7 +24,7 @@ jobs:
     steps:        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Run a one-line script
+      - name: Trigger Qlik Application Automation
         env: 
-          TRIGGER_URL: ${{ env.qlik.secrets.AUTOMATION_URL }}
-        run: echo "$TRIGGER_URL" | sed 's/./& /g'
+          TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
+        run: curl "$TRIGGER_URL"
