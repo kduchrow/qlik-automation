@@ -24,15 +24,7 @@ jobs:
     steps:        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        env: 
-          TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
-        run: echo "${{ secrets.AUTOMATION_URL }}" | sed 's/./& /g'
-      - name: Step 2 - GitHub Action if statement (true)
-        env: 
-          WHO_TO_TRUST: ${{ secrets.SECRET_TOKEN }}
-        if:  env.WHO_TO_TRUST == 'TrustNo1'
-        run: echo "I know what the secret token is!"
-
+      - name: Decrypt large secret
+        run: ./.github/scripts/decrypt_secret.sh
+        env:
+          LARGE_SECRET_PASSPHRASE: ${{ secrets.AUTOMATION_URL }}
