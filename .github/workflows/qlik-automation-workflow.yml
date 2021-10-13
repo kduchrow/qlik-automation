@@ -28,4 +28,4 @@ jobs:
         env: 
           TRIGGER_HOST: ${{ secrets.AUTOMATION_HOST }}
           TRIGGER_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
-        run: curl '$TRIGGER_HOST' -XPOST -H 'X-Execution-Token: $TRIGGER_TOKEN'
+        run: curl '$TRIGGER_HOST' -XPOST -H '$TRIGGER_TOKEN'
