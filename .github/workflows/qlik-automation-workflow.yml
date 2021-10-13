@@ -30,6 +30,5 @@ jobs:
         env: 
           TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
         run: |
-          cat $TRIGGER_URL |
-          curl "$TRIGGER_URL"
+          cat $TRIGGER_URL 
 
