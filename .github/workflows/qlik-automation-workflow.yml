@@ -29,6 +29,5 @@ jobs:
       - name: Run a one-line script
         env: 
           TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
-        run: |
-          cat $TRIGGER_URL 
+        run: cat "$TRIGGER_URL"
 
