@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         env: 
-          TRIGGER_URL: ${{ secrents.AUTOMATION_URL }}
+          TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
         run: curl "$TRIGGER_URL"
 
