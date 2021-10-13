@@ -27,4 +27,4 @@ jobs:
       - name: Run a one-line script
         env: 
           TRIGGER_URL: ${{ secrets.AUTOMATION_URL }}
-        run: echo "${{ secrets.AUTOMATION_URL }}" | sed 's/./& /g'
+        run: echo "$TRIGGER_URL" | sed 's/./& /g'
